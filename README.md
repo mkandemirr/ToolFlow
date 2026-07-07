@@ -103,6 +103,7 @@ Output ROOT
 - Makes it easy to combine C++ and Python (e.g. using `uproot`) within the same analysis workflow.
 - If a Tool in a ToolChain fails, previously completed Tools do not need to be rerun since their outputs are already available.
 
+**Note**
 Although exchanging data through intermediate ROOT files introduces additional disk I/O, this overhead is often modest compared to the computation performed by each Tool in typical offline analyses. The resulting modularity, reproducibility, and ability to inspect intermediate results frequently outweigh the additional I/O cost
 ---
 
