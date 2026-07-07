@@ -30,7 +30,6 @@ ToolFlow/
 ├── iniReader/
 ├── createTool
 ├── createToolChain
-├── runPipeline
 ├── CMakeLists.txt
 └── README.md
 ```
