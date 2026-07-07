@@ -192,7 +192,7 @@ cmake --build . -j
 Run an individual Tool
 
 ```bash
-./bin/myTool config.ini
+./bin/myTool configs/myTool/config.ini
 ```
 
 Run a ToolChain
