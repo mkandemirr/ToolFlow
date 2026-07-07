@@ -130,7 +130,9 @@ Tool and ToolChain registries are updated automatically.
 
 # Building
 
-Create an out-of-source build directory
+ToolFlow uses CMake and supports out-of-source builds.
+
+Create a build directory
 
 ```bash
 mkdir build
@@ -140,14 +142,14 @@ cd build
 Build all Tools
 
 ```bash
-cmake ..
+cmake ../<source_dir>
 cmake --build . -j
 ```
 
 Build selected Tools
 
 ```bash
-cmake .. \
+cmake ../<source_dir> \
     -DTOOLS="tools/tool1;tools/tool2"
 
 cmake --build . -j
@@ -156,13 +158,32 @@ cmake --build . -j
 Build all Tools required by one or more ToolChains
 
 ```bash
-cmake .. \
+cmake ../<source_dir> \
     -DTOOLCHAINS="toolChains/myToolChain"
 
 cmake --build . -j
 ```
 
-`TOOLS` and `TOOLCHAINS` may also be combined.
+Multiple ToolChains can also be specified
+
+```bash
+cmake ../<source_dir> \
+    -DTOOLCHAINS="toolChains/chain1;toolChains/chain2"
+
+cmake --build . -j
+```
+
+`TOOLS` and `TOOLCHAINS` may also be combined. In this case, ToolFlow builds the union of all specified Tools and all Tools required by the selected ToolChains.
+
+```bash
+cmake ../<source_dir> \
+    -DTOOLS="tools/myExtraTool" \
+    -DTOOLCHAINS="toolChains/myToolChain"
+
+cmake --build . -j
+```
+
+---
 
 ---
 
