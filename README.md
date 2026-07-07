@@ -40,7 +40,6 @@ ToolFlow/
 - **iniReader/** provides a lightweight INI configuration parser.
 - **createTool** automatically generates a new Tool.
 - **createToolChain** automatically generates a new ToolChain.
-- **runPipeline** executes ToolChains.
 
 ---
 
