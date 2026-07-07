@@ -37,7 +37,7 @@ ToolFlow/
 
 - **tools/** contains independent analysis Tools.
 - **toolChains/** contains analysis workflows.
-- **shared/** contains reusable classes shared between multiple Tools.
+- **shared/** contains reusable classes shared between multiple Tools (e.g. experiment data structures, utility classes, and helper algorithms).
 - **iniReader/** provides a lightweight INI configuration parser.
 - **createTool** automatically generates a new Tool.
 - **createToolChain** automatically generates a new ToolChain.
