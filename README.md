@@ -1,6 +1,6 @@
 # ToolFlow
 
-ToolFlow is a lightweight C++ framework for developing modular scientific analysis software based on [CERN ROOT](https://root.cern/).
+ToolFlow provides a lightweight C++ project skeleton for developing modular scientific analysis software using [CERN ROOT](https://root.cern/).
 
 The main idea behind ToolFlow is to combine the simplicity of traditional ROOT macros with the modular **Tool** and **ToolChain** concepts inspired by [ToolAnalysis](https://github.com/ANNIEsoft/ToolAnalysis).
 
